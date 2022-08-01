@@ -1,7 +1,7 @@
 # Blood Cell Detection Model
 Ready to deploy blood cell detection model for NVIDIA Jetson platform on DeepStream SDK. Trained with using TAO Toolkit based on DetectNet V2 pre-trained model.
 
-## Prerequisities
+## Prerequisities
 
 ### Hardware
 - NVIDIA Jetson Developer Kits or Production Module Systems
@@ -15,6 +15,10 @@ Ready to deploy blood cell detection model for NVIDIA Jetson platform on DeepStr
 ## Dataset
 
 ## Installation
+
+### DeepStream
+
+### TAO Deployment
 
 ## Deployment
 
