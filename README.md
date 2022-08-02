@@ -14,7 +14,7 @@ I used [blood cell detection dataset]() which I collected and annotated when I w
 
 ## Example Usage
 1. Be sure that you properly installed JetPack SDK 4.6.1.
-2. Install NVIDIA DeepStream SDK 6.0.1.
+2. Install NVIDIA DeepStream SDK 6.0.1. You can follow the [official documentation](https://docs.nvidia.com/metropolis/deepstream/6.0.1/dev-guide/text/DS_Quickstart.html).
 3. Clone [DeepStream TAO Apps](https://github.com/NVIDIA-AI-IOT/deepstream_tao_apps/tree/release/tao3.0_ds6.0.1) repository. *Notice that we cloned the branch for DeepStream 6.0.1 version.* an
 
 ```
@@ -25,7 +25,7 @@ git clone -b release/tao3.0_ds6.0.1 https://github.com/NVIDIA-AI-IOT/deepstream_
 
 ```
 cd deepstream_tao_apps
-export CUDA_VER=xy.z
+export CUDA_VER=10.2
 make
 ```
 
@@ -39,9 +39,9 @@ git clone https://github.com/draaslan/blood-cell-detection-model
 6. Run *ds-tao-detection* app with config and test video. *This process can be take a while.*
 
 ```
-./apps/tao_detection/d-tao-detection -d \
-    -c apps/blood-cell-detection-model/inference_config.txt \
-    -i apps/blood-cell-detection-model/test.h264 
+./apps/tao_detection/ds-tao-detection -d \
+    -c blood-cell-detection-model/inference_config.txt \
+    -i blood-cell-detection-model/test.h264 
 ```
 
 7. Model output will be saved as h624 format and inference result will be open on a window.
