@@ -39,7 +39,9 @@ git clone https://github.com/draaslan/blood-cell-detection-model
 6. Run *ds-tao-detection* app with config and test video. *This process can be take a while.*
 
 ```
-./apps/tao_detection/d-tao-detection -c apps/blood-cell-detection-model/inference_config.txt -i apps/blood-cell-detection-model/test.h264 -d
+./apps/tao_detection/d-tao-detection -d \
+    -c apps/blood-cell-detection-model/inference_config.txt \
+    -i apps/blood-cell-detection-model/test.h264 
 ```
 
 7. Model output will be saved as h624 format and inference result will be open on a window.
